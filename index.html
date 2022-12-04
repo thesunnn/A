@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style media="screen">
+    body{background-image: url(images/background.png); }
+  </style>
+
+
+
+
+  <title>나비</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+  <link rel="stylesheet" href="css/album.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--swiper-->
+	<link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<!--full screen-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+
+<header>
+<nav id="menu">
+ <h1><a href="index.html">나비</a></h1>
+ <div class="nav-link" id="navlink">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li data-menuanchor="sec1" class="active"><a href="#sec1">Main</a></li>
+			<li data-menuanchor="sec2"><a href="#sec2">Poster</a></li>
+			<li data-menuanchor="sec3"><a href="#sec3">Stillcut</a></li>
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+	</header>
+<!--
+<ul id="menu">
+    <li data-menuanchor="sec1" class="active"><a href="#sec1">Section1</a></li>
+    <li data-menuanchor="sec2"><a href="#sec2">Section2</a></li>
+    <li data-menuanchor="sec3"><a href="#sec3">Section3</a></li>
+</ul>-->
+
+<div id="fullpage">
+    <div class="section sec1 active">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <video class="video-wrap" autoplay loop muted>
+                    <source src="images/mv_1.MP4" type="video/mp4" / >
+                    <source src="images/mv_1.webm" type="video/webm" />
+                  </video>
+                  <section class="hero-bg">
+                    <div class="container">
+                      <div class="text-wrap">
+                        <!--<h2>나비</h2>-->
+
+                        <p>의문의 편지를 받게된 설이 보낸이를 찾기위해 나선다</p>
+
+                        <div class="btn-wrap">
+                          <a class="btn" href="https://youtu.be/BGXPLH2-at0">Play</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="swiper-slide">
+                  <video class="video-wrap" autoplay loop muted>
+                    <source src="images/ani_1.MP4" type="video/mp4" / >
+                    <source src="images/ani_1.webm" type="video/webm" />
+                  </video>
+                  <section class="hero-bg">
+                    <div class="container">
+                      <div class="text-wrap">
+                        <!--<h2 >나비</h2>-->
+
+                        <p>의문의 편지를 받게된 설이 보낸이를 찾기위해 나선다</p>
+
+                        <div class="btn-wrap">
+                          <a class="btn" href="https://youtu.be/BGXPLH2-at0">Play</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="section sec2 ">
+          <div class="poster">
+          <img src="images/poster.png" alt="" class="posterimg">
+        </div>
+
+    </div>
+
+    <div class="section sec3">
+      <div class="wrapper" align="Center">
+        <div class="gallery">
+          <div class="image"><span><img src="images/img-1.jpg" alt=""></span></div>
+          <div class="image"><span><img src="images/img-2.jpg" alt=""></span></div>
+          <div class="image"><span><img src="images/img-3.jpg" alt=""></span></div>
+          <div class="image"><span><img src="images/img-4.jpg" alt=""></span></div>
+          <div class="image"><span><img src="images/img-5.jpg" alt=""></span></div>
+          <div class="image"><span><img src="images/img-6.jpg" alt=""></span></div>
+
+
+
+
+        </div>
+      </div>
+      <div class="preview-box">
+        <div class="details">
+          <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+          <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+          <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+          <div class="slide next"><i class="fas fa-angle-right"></i></div>
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+
+</div>
+
+<script src="js/album.js"></script>
+<script src="js/card.js"></script>
+<!--- javascript for toggle menu ------->
+  <script>
+  var navlink = document.getElementById("navlink");
+
+  function showMenu(){
+     navlink.style.right = "0";
+  }
+  function hideMenu(){
+     navlink.style.right = "-200px";
+  }
+  </script>
+
+
+</body>
+</html>
